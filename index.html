@@ -3,47 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ContextIQ</title>
+    <title>ContextIQ - Intelligent Document Assistant</title>
     <link rel="shortcut icon" type="image/x-icon" href="images/icon.png" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&amp;display=swap" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous">
     <link rel="stylesheet" href="index.css" />
     <script defer src="index.js"></script>
 </head>
 <body>
     <header>
-        <img src="images/icon.png" alt="ContextIQ" style="width: 40px; height: 40px;">
-        <h1>ContextIQ</h1>
-        <button class="hamburger" aria-label="Menu">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
-        <nav class="nav-menu">
-            <a href="#about">About</a>
-            <a href="#features">Features</a>
-            <a href="#tech-stack">Tech Stack</a>
-            <a href="#gallery">Gallery</a>
-            <a href="#promo">Promotion Video</a>
-            <a href="#team">Team Members</a>
-        </nav>
+        <div class="header-content">
+            <h1><a href="#hero" class="logo-link">ContextIQ</a></h1>
+            <button class="hamburger" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="nav-menu">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#tech-stack" class="nav-link">Tech Stack</a>
+                <a href="#gallery" class="nav-link">Gallery</a>
+                <a href="#promo" class="nav-link">Promotion Video</a>
+                <a href="#team" class="nav-link">Team Members</a>
+            </nav>
+        </div>
     </header>
+    
+    <section id="hero">
+        <div class="hero-content">
+            <h2>Transform Your Documents Into<br><span class="gradient-text">Smart Insights</span></h2>
+            <p>An intelligent assistant that helps non-technical team members get accurate, contextually relevant answers to their questions about technical documents.</p>
+            <a href="#about" class="cta-button">Learn More</a>
+        </div>
+        <div class="hero-background">
+            <div class="gradient-sphere"></div>
+            <div class="gradient-sphere"></div>
+            <div class="gradient-sphere"></div>
+        </div>
+    </section>
     
     <section id="about">
         <div class="about-content">
             <div class="about-text">
-                <p>ContextIQ is a mobile and a web application that acts as an
-                intelligent assistant, helping non-technical team members get accurate, contextually relevant
-                answers to their questions about technical documents without needing to interrupt technical staff.
-                </p>
-                <p>By leveraging
-                advanced AI and retrieval augmented generation (RAG) techniques,
-                the application is able to understand user queries within the context of Mobiliz's products and services,
-                providing immediate and accurate responses.
-                </p>
+                <h3>About ContextIQ</h3>
+                <p>ContextIQ is a mobile and web application that acts as an intelligent assistant, helping non-technical team members get accurate, contextually relevant answers to their questions about technical documents without needing to interrupt technical staff.</p>
+                <p>By leveraging advanced AI and retrieval augmented generation (RAG) techniques, the application is able to understand user queries within the context of Mobiliz's products and services, providing immediate and accurate responses.</p>
             </div>
             <div class="slogan">
-                <h3>"Turn your documents into actionable intelligence"</h3>
+                <h3>"Your Intelligent Document Companion"</h3>
             </div>
         </div>
     </section>
@@ -52,37 +60,51 @@
         <h2>Features</h2>
         <ul class="features-list">
             <li>
-                <img src="images/logos/fast.png" alt="Real-Time, Accurate Responses">
+                <div class="feature-icon">
+                    <img src="images/logos/fast.png" alt="Real-Time, Accurate Responses">
+                </div>
                 <h3>Real-Time, Accurate Responses</h3>
                 <p>Utilizes Retrieval Augmented Generation (RAG) to provide up-to-date and precise answers by referencing the most relevant documents in real time.</p>
             </li>
             <li>
-                <img src="images/logos/document.png" alt="Comprehensive Document Parsing">
+                <div class="feature-icon">
+                    <img src="images/logos/document.png" alt="Comprehensive Document Parsing">
+                </div>
                 <h3>Comprehensive Document Parsing</h3>
                 <p>Fully processes PDF documents, including text, tables, and lists, ensuring no detail is missed.</p>
             </li>
             <li>
-                <img src="images/logos/powerful.png" alt="Powerful Document Management">
+                <div class="feature-icon">
+                    <img src="images/logos/powerful.png" alt="Powerful Document Management">
+                </div>
                 <h3>Powerful Document Management</h3>
                 <p>Upload documents through the admin page, enabling the LLM to learn from over 210 existing files and continuously expand its knowledge.</p>
             </li>
             <li>
-                <img src="images/logos/memory.png" alt="Context-Aware Conversations">
+                <div class="feature-icon">
+                    <img src="images/logos/memory.png" alt="Context-Aware Conversations">
+                </div>
                 <h3>Context-Aware Conversations</h3>
-                <p>Remembers the context of previous chats, providing more relevant and coherent responses over time.</p>
+                <p>Remembers the context of previous questions, providing more relevant and coherent responses over time.</p>
             </li>
             <li>
-                <img src="images/logos/focus.png" alt="Focused Answers">
+                <div class="feature-icon">
+                    <img src="images/logos/focus.png" alt="Focused Answers">
+                </div>
                 <h3>Focused Answers</h3>
                 <p>Select specific documents to guide the chatbot's responses, ensuring accurate and targeted answers.</p>
             </li>
             <li>
-                <img src="images/logos/voice.png" alt="Voice-Activated Interactions">
+                <div class="feature-icon">
+                    <img src="images/logos/voice.png" alt="Voice-Activated Interactions">
+                </div>
                 <h3>Voice-Activated Interactions</h3>
                 <p>Ask your questions out loud with built-in speech recognition, making conversations faster and more natural.</p>
             </li>
             <li>
-                <img src="images/logos/modern.png" alt="Modern, Responsive Design">
+                <div class="feature-icon">
+                    <img src="images/logos/modern.png" alt="Modern, Responsive Design">
+                </div>
                 <h3>Modern, Responsive Design</h3>
                 <p>Features a sleek, mobile-friendly interface for a smooth user experience on any device.</p>
             </li>
@@ -117,8 +139,16 @@
                 <h3>Javascript</h3>
             </div>
             <div class="tech-logo-card">
-                <img src="images/logos/langchain.png" alt="LangChain">
+                <img src="images/logos/CSS-Logo-2011.png" alt="CSS">
+                <h3>CSS</h3>
+            </div>
+            <div class="tech-logo-card">
+                <img src="images/logos/Cohere-Logo.png" alt="Cohere">
                 <h3>Cohere Command R+ as the LLM</h3>
+            </div>
+            <div class="tech-logo-card">
+                <img src="images/logos/langchain.png" alt="LangChain">
+                <h3>LangChain</h3>
             </div>
             <div class="tech-logo-card">
                 <img src="images/logos/embedding.png" alt="Embedding">
@@ -139,19 +169,19 @@
         <h2>Gallery</h2>
         <div class="gallery-container">
             <div class="gallery">
-                <img src="images/gallery/1.png">
-                <img src="images/gallery/2.png">
-                <img src="images/gallery/3.png">
-                <img src="images/gallery/4.png">
-                <img src="images/gallery/5.png">
-                <img src="images/gallery/6.png">
-                <img src="images/gallery/7.png">
-                <img src="images/gallery/8.png">
-                <img src="images/gallery/9.png">
-                <img src="images/gallery/10.png">
-                <img src="images/gallery/11.png">
-                <img src="images/gallery/12.png">
-                <img src="images/gallery/13.png">
+                <img src="images/gallery/1.png" alt="Gallery Image 1">
+                <img src="images/gallery/2.png" alt="Gallery Image 2">
+                <img src="images/gallery/3.png" alt="Gallery Image 3">
+                <img src="images/gallery/4.png" alt="Gallery Image 4">
+                <img src="images/gallery/5.png" alt="Gallery Image 5">
+                <img src="images/gallery/6.png" alt="Gallery Image 6">
+                <img src="images/gallery/7.png" alt="Gallery Image 7">
+                <img src="images/gallery/8.png" alt="Gallery Image 8">
+                <img src="images/gallery/9.png" alt="Gallery Image 9">
+                <img src="images/gallery/10.png" alt="Gallery Image 10">
+                <img src="images/gallery/11.png" alt="Gallery Image 11">
+                <img src="images/gallery/12.png" alt="Gallery Image 12">
+                <img src="images/gallery/13.png" alt="Gallery Image 13">
             </div>
         </div>
     </section>
@@ -217,7 +247,7 @@
                 <div class="member-photo">
                     <img src="images/teamMembers/nihanHoca.jpg" alt="Fehime Nihan Kesim Çiçekli">
                 </div>
-                <h3>Nihan Kesim Çiçekli</h3>
+                <h3>Fehime Nihan Çiçekli</h3>
                 <p class="role">Supervisor</p>
                 <a href="https://www.linkedin.com/in/nihan-cicekli-94bb6844/" class="linkedin-link"><i class="fab fa-linkedin"></i></a>
             </div>
@@ -225,9 +255,13 @@
     </section>
     
     <footer>
-        <p>&copy; 2025 ContextIQ Team. All rights reserved.</p>
-        <p>📍 ODTÜ Bilgisayar Mühendisliği Bölümü, Üniversiteler, 06800 Çankaya/Ankara</p>
-        <p>✉️ contextiq2025@gmail.com</p>
+        <div class="footer-content">
+            <div class="footer-info">
+                <p>&copy; 2025 ContextIQ Team. All rights reserved.</p>
+                <p>📍 ODTÜ Bilgisayar Mühendisliği Bölümü, Üniversiteler, 06800 Çankaya/Ankara</p>
+                <p>✉️ contextiq2025@gmail.com</p>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
